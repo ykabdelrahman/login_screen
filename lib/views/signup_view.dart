@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:login_screen/widgets/dont_have_account_text.dart';
-import 'package:login_screen/widgets/login_form.dart';
-import 'package:login_screen/widgets/login_texts.dart';
+import 'package:login_screen/widgets/already_have_account.dart';
+import 'package:login_screen/widgets/signup_form.dart';
+import 'package:login_screen/widgets/signup_texts.dart';
 
-class LoginView extends StatelessWidget {
-  const LoginView({super.key});
+class SignUpView extends StatelessWidget {
+  const SignUpView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,11 +15,11 @@ class LoginView extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                LoginTexts(),
+                SignUpTexts(),
                 SizedBox(height: 36),
-                LoginForm(),
+                SignupForm(),
                 SizedBox(height: 30),
-                DontHaveAccountText(),
+                AlreadyHaveAccountText(),
               ],
             ),
           ),

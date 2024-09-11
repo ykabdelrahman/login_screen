@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:login_screen/helpers/constants.dart';
 
-class WelcomeTexts extends StatelessWidget {
-  const WelcomeTexts({super.key});
+class SignUpTexts extends StatelessWidget {
+  const SignUpTexts({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +10,7 @@ class WelcomeTexts extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Welcome Back',
+          'Create Account',
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.w700,
@@ -19,7 +19,7 @@ class WelcomeTexts extends StatelessWidget {
         ),
         SizedBox(height: 8),
         Text(
-          'We\'re excited to have you back, can\'t wait to see what you\'ve been up to since you last logged in.',
+          'Sign up now and start exploring all that our app has to offer. We\'re excited to welcome you to our community!',
           style: TextStyle(
             fontSize: 14,
             fontWeight: FontWeight.w400,

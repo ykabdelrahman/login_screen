@@ -1,10 +1,9 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:login_screen/helpers/constants.dart';
-import 'package:login_screen/views/signup_view.dart';
 
-class DontHaveAccountText extends StatelessWidget {
-  const DontHaveAccountText({super.key});
+class AlreadyHaveAccountText extends StatelessWidget {
+  const AlreadyHaveAccountText({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +12,7 @@ class DontHaveAccountText extends StatelessWidget {
       text: TextSpan(
         children: [
           TextSpan(
-            text: 'Don\'t have an account?',
+            text: 'Already have an account?',
             style: TextStyle(
               fontSize: 14,
               color: kTextColor.withOpacity(.6),
@@ -21,7 +20,7 @@ class DontHaveAccountText extends StatelessWidget {
             ),
           ),
           TextSpan(
-            text: ' Sign Up',
+            text: ' Login',
             style: const TextStyle(
               fontSize: 14,
               color: kPrimaryColor,
@@ -29,12 +28,7 @@ class DontHaveAccountText extends StatelessWidget {
             ),
             recognizer: TapGestureRecognizer()
               ..onTap = () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const SignUpView(),
-                  ),
-                );
+                Navigator.pop(context);
               },
           ),
         ],
